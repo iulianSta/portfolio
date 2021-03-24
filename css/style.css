@@ -26,10 +26,30 @@ body {
   align-items: center;
   flex-direction: column;
 }
+/* Home page */
+/* Header style */
+.home-header {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Menu style */
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+li > a {
+  text-decoration: none;
+  padding-right: 10em;
+}
 /* Profile image style */
 .profile-img img {
-  width: 4rem;
-  height: 5rem;
+  width: 5rem;
+  height: 7rem;
+  border-radius: 10%;
 }
 /* Image style */
 .image img {
