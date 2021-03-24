@@ -1,5 +1,5 @@
 # Iulian's portfolio
-:bowtie: Hi there,/
+:bowtie: Hi there, /
 :octocat: I am Iulian!/
 :innocent: I am a wev dev student at [**DCI Digital Career Institute**](https://www.digitalcareerinstitute.org)./
 :smile: Here, in aboub section, I linked my portfolio./
