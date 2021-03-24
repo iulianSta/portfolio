@@ -1,8 +1,28 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 /* All elements style */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Root area style */
 :root {
+  --font-train-one: "Train One", cursive, sans-serif;
+}
+body {
+  width: 100vw;
+  height: auto;
+}
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+.profile-img img {
+  width: 4rem;
+  height: 5rem;
+}
+.image img {
+  width: 20rem;
+  height: 20rem;
 }
