@@ -51,6 +51,14 @@ li > a {
   height: 7rem;
   border-radius: 10%;
 }
+/* Main page style */
+.home-main {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* Image style */
 .image img {
   width: 20rem;
