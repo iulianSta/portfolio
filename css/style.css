@@ -10,6 +10,9 @@
 :root {
   font-size: 16px;
   --font-train-one: "Train One", cursive, sans-serif;
+  --color-blue: blue;
+  --color-yellow: yellow;
+  --color-red: red;
 }
 /* Body style */
 body {
@@ -25,6 +28,11 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  background-image: url(../img/3d-carbon-fiber-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
 }
 /* Home page */
 /* Header style */
@@ -43,7 +51,17 @@ body {
 }
 li > a {
   text-decoration: none;
-  padding-right: 10em;
+  font-size: 1.5em;
+  padding-right: 8em;
+}
+ul > li:first-child > a {
+  color: var(--color-blue);
+}
+ul > li:nth-child(2) > a {
+  color: var(--color-yellow);
+}
+ul > li:last-child > a {
+  color: var(--color-red);
 }
 /* Profile image style */
 .profile-img img {
@@ -63,4 +81,9 @@ li > a {
 .image img {
   width: 20rem;
   height: 20rem;
+  border-radius: 2em;
+}
+.text {
+  font-size: 1.8em;
+  color: azure;
 }
