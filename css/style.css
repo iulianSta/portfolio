@@ -193,3 +193,16 @@ legend {
   font-size: 2.7em;
   color: var(--color-red);
 }
+.projects div iframe {
+  width: 10em;
+  height: 2em;
+}
+.logo {
+  width: 15em;
+  height: 3em;
+}
+.mobile-app,
+.youtube-clone {
+  width: 15em;
+  height: 10em;
+}
