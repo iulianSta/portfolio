@@ -1,15 +1,19 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=Train+One&display=swap");
 /* All elements style */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 /* Root area style */
 :root {
   font-size: 16px;
   --font-train-one: "Train One", cursive, sans-serif;
+  --font-cormorant: "Cormorant Unicase", cursive, serif;
+  --color-azure: azure;
   --color-blue: blue;
   --color-yellow: yellow;
   --color-red: red;
@@ -52,7 +56,7 @@ body {
 li > a {
   text-decoration: none;
   font-size: 1.5em;
-  padding-right: 8em;
+  padding-right: 7em;
 }
 ul > li:first-child > a {
   color: var(--color-blue);
@@ -77,6 +81,9 @@ ul > li:last-child > a {
   justify-content: space-evenly;
   align-items: center;
 }
+.text p {
+  text-align: center;
+}
 /* Image style */
 .image img {
   width: 20rem;
@@ -86,7 +93,7 @@ ul > li:last-child > a {
 /* Textarea style */
 .text {
   font-size: 1.8em;
-  color: azure;
+  color: var(--color-azure);
 }
 /* About me page */
 /* About section style */
@@ -94,14 +101,95 @@ ul > li:last-child > a {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  background-image: url(../img/3d-carbon-background.jpg);
 }
+/* H1 style */
 .about > h1 {
   width: 80vw;
-  height: 10vh;
+  height: 5vh;
   font-family: var(--font-train-one);
   font-size: 2.7em;
   color: var(--color-blue);
+}
+/* Main content/ About page style */
+.about-main {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-main p {
+  font-size: 1.3em;
+  color: var(--color-azure);
+}
+p > a {
+  text-decoration: none;
+  color: silver;
+}
+.about-bottom {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "legend"
+    "about-img";
+  justify-content: center;
+}
+legend {
+  font-family: var(--font-cormorant);
+  font-size: 1.8em;
+  color: var(--color-azure);
+  text-align: center;
+}
+.about-img {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  align-items: center;
+}
+.about-img img {
+  width: 20rem;
+  height: 12rem;
+  position: relative;
+  left: 4rem;
+  border-radius: 10%;
+}
+/* My Projects page */
+/* Projects style */
+.projects {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.projects > h1 {
+  width: 80vw;
+  height: 5vh;
+  font-family: var(--font-train-one);
+  font-size: 2.7em;
+  color: var(--color-yellow);
+}
+
+/* Contact me page */
+/* Contact style */
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact > h1 {
+  width: 80vw;
+  height: 5vh;
+  font-family: var(--font-train-one);
+  font-size: 2.7em;
+  color: var(--color-red);
 }
