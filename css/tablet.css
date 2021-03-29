@@ -46,32 +46,50 @@ body {
 /* Home page */
 /* Header style */
 .home-header {
-  width: 80vw;
-  height: 10vh;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 3rem 0 3rem;
+  position: relative;
+}
+/* Menu style */
+/* Hamburger menu style */
+.x-menu {
+  width: 3.5em;
+  height: 3.5em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+/* Hamburger menu individual style */
+.x-menu div {
+  width: 3.5em;
+  height: 0.5em;
+  background-color: whitesmoke;
+  border-radius: 25%;
+  transition: 0.5s;
 }
 /* Menu style */
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.menu {
+  display: none;
 }
-li > a {
+/* Lists style */
+.menu ul li {
+  padding-bottom: 0.5em;
+}
+/* Side menu/ Display none */
+.menu {
+  display: none;
+}
+ul li a {
   text-decoration: none;
-  font-size: 1em;
-  padding-right: 7em;
+  color: var(--color-azure);
 }
-ul > li:first-child > a {
-  color: var(--color-blue);
-}
-ul > li:nth-child(2) > a {
-  color: var(--color-yellow);
-}
-ul > li:last-child > a {
-  color: var(--color-red);
-}
+
 /* Menu animation */
 .bounce-in-top:first-child {
   animation: bounce-in-top 1.1s both;
@@ -128,10 +146,11 @@ ul > li:last-child > a {
 /* Main page style */
 .home-main {
   width: 100%;
-  height: auto;
+  height: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
 }
 .text p {
   text-align: center;
@@ -139,8 +158,8 @@ ul > li:last-child > a {
 
 /* Image style */
 .image img {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 2em;
 }
 /* Images animation */
@@ -161,7 +180,7 @@ ul > li:last-child > a {
 
 /* Textarea style */
 .text {
-  font-size: 1.3em;
+  font-size: 1em;
   color: var(--color-azure);
 }
 /* Text animation */
@@ -200,16 +219,17 @@ ul > li:last-child > a {
   width: 80vw;
   height: 5vh;
   font-family: var(--font-train-one);
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--color-blue);
 }
 /* Main content/ About page style */
 .about-main {
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 /* H1 animation */
 .about .bounce-in-top {
@@ -217,7 +237,7 @@ ul > li:last-child > a {
 }
 .about-main p {
   font-family: var(--font-new-tegomin);
-  font-size: 1em;
+  font-size: 0.8em;
   color: var(--color-azure);
 }
 .tracking-in-expand {
@@ -226,7 +246,7 @@ ul > li:last-child > a {
 
 @keyframes tracking-in-expand {
   0% {
-    letter-spacing: -0.5em;
+    letter-spacing: -0.2em;
     opacity: 0;
   }
   40% {
@@ -257,7 +277,7 @@ p > a {
 /* Legend style */
 legend {
   font-family: var(--font-cormorant);
-  font-size: 1.3em;
+  font-size: 0.8em;
   color: var(--color-azure);
   text-align: center;
 }
@@ -281,7 +301,7 @@ legend {
   100% {
     display: initial;
     opacity: 1;
-    width: 60%;
+    width: 90%;
   }
 }
 
@@ -304,8 +324,8 @@ legend {
   flex-wrap: wrap;
 }
 .about-img img {
-  width: 10rem;
-  height: 8rem;
+  width: 8rem;
+  height: 5rem;
   position: relative;
   cursor: pointer;
   border-radius: 10%;
@@ -335,7 +355,7 @@ legend {
   width: 80vw;
   height: 5vh;
   font-family: var(--font-train-one);
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--color-yellow);
 }
 /* H1 animation */
@@ -345,14 +365,16 @@ legend {
 /* H2 style */
 .projects h2 {
   font-family: var(--font-cormorant);
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: var(--color-azure);
 }
 /* First row of images style */
 .logo {
-  width: 10em;
-  height: 3em;
+  width: 8em;
+  height: 2em;
+  display: flex;
+  padding-bottom: 0.5em;
 }
 /* Second row of images style */
 .mobile-app,
@@ -360,8 +382,10 @@ legend {
 .login-app,
 .periodic-table,
 .gallery-images {
-  width: 10em;
-  height: 7em;
+  width: 8em;
+  height: 4em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
 }
 
 /* Contact me page */
@@ -384,7 +408,7 @@ legend {
   width: 80vw;
   height: 5vh;
   font-family: var(--font-train-one);
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--color-red);
 }
 /* Contact, H1 animation */
@@ -398,16 +422,17 @@ legend {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 /* Contact, H2 style */
 .contact > div h2 {
   font-family: var(--font-new-tegomin);
   color: var(--color-azure);
-  font-size: 1.2em;
+  font-size: 1em;
 }
 /* Form style */
 form {
-  width: 25rem;
+  width: 20rem;
   height: 25vh;
   display: flex;
   justify-content: space-evenly;
@@ -436,7 +461,7 @@ form fieldset textarea {
 /* Submit button style */
 form button {
   font-family: var(--font-cormorant);
-  font-size: 1.5em;
+  font-size: 1.2em;
   border-radius: 30%;
   border: none;
   color: var(--color-black);

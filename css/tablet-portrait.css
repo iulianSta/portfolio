@@ -75,20 +75,7 @@ body {
 }
 /* Menu style */
 .menu {
-  display: flex;
-  position: relative;
-}
-/* Navigation menu style */
-.menu ul {
-  font-family: var(--font-cormorant);
-  font-size: medium;
-  font-weight: bold;
-  color: var(--color-azure);
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  display: none;
 }
 /* Lists style */
 .menu ul li {
@@ -312,7 +299,7 @@ legend {
   100% {
     display: initial;
     opacity: 1;
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -366,7 +353,7 @@ legend {
   width: 80vw;
   height: 5vh;
   font-family: var(--font-train-one);
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--color-yellow);
 }
 /* H1 animation */
@@ -376,14 +363,14 @@ legend {
 /* H2 style */
 .projects h2 {
   font-family: var(--font-cormorant);
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: var(--color-azure);
 }
 /* First row of images style */
 .logo {
-  width: 10em;
-  height: 3em;
+  width: 7em;
+  height: 2em;
 }
 /* Second row of images style */
 .mobile-app,
@@ -391,8 +378,8 @@ legend {
 .login-app,
 .periodic-table,
 .gallery-images {
-  width: 10em;
-  height: 7em;
+  width: 7em;
+  height: 4em;
 }
 
 /* Contact me page */
@@ -415,7 +402,7 @@ legend {
   width: 80vw;
   height: 5vh;
   font-family: var(--font-train-one);
-  font-size: 2em;
+  font-size: 1.3em;
   color: var(--color-red);
 }
 /* Contact, H1 animation */
@@ -427,18 +414,18 @@ legend {
   width: 70vw;
   height: 30vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 /* Contact, H2 style */
 .contact > div h2 {
   font-family: var(--font-new-tegomin);
   color: var(--color-azure);
-  font-size: 1.2em;
+  font-size: 1em;
 }
 /* Form style */
 form {
-  width: 25rem;
+  width: 20rem;
   height: 25vh;
   display: flex;
   justify-content: space-evenly;
@@ -467,7 +454,7 @@ form fieldset textarea {
 /* Submit button style */
 form button {
   font-family: var(--font-cormorant);
-  font-size: 1.5em;
+  font-size: 1.2em;
   border-radius: 30%;
   border: none;
   color: var(--color-black);
