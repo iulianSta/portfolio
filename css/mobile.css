@@ -146,7 +146,7 @@ ul li a {
 /* Main page style */
 .home-main {
   width: 100%;
-  height: 50%;
+  height: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -158,8 +158,8 @@ ul li a {
 
 /* Image style */
 .image img {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 15rem;
   border-radius: 2em;
 }
 /* Images animation */
@@ -180,7 +180,7 @@ ul li a {
 
 /* Textarea style */
 .text {
-  font-size: 1em;
+  font-size: 0.8em;
   color: var(--color-azure);
 }
 /* Text animation */
@@ -225,7 +225,7 @@ ul li a {
 /* Main content/ About page style */
 .about-main {
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@ ul li a {
 }
 .about-main p {
   font-family: var(--font-new-tegomin);
-  font-size: 0.8em;
+  font-size: 0.4em;
   color: var(--color-azure);
 }
 .tracking-in-expand {
@@ -277,7 +277,7 @@ p > a {
 /* Legend style */
 legend {
   font-family: var(--font-cormorant);
-  font-size: 0.8em;
+  font-size: 0.45em;
   color: var(--color-azure);
   text-align: center;
 }
@@ -301,7 +301,7 @@ legend {
   100% {
     display: initial;
     opacity: 1;
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -317,6 +317,7 @@ legend {
 }
 /* Images style */
 .about-img {
+  width: 100vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -324,7 +325,7 @@ legend {
   flex-wrap: wrap;
 }
 .about-img img {
-  width: 8rem;
+  width: 6rem;
   height: 5rem;
   position: relative;
   cursor: pointer;
@@ -365,7 +366,7 @@ legend {
 /* H2 style */
 .projects h2 {
   font-family: var(--font-cormorant);
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   color: var(--color-azure);
 }
@@ -418,7 +419,7 @@ legend {
 /* Contact division style */
 .contact > div {
   width: 70vw;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -428,11 +429,11 @@ legend {
 .contact > div h2 {
   font-family: var(--font-new-tegomin);
   color: var(--color-azure);
-  font-size: 1em;
+  font-size: 0.8em;
 }
 /* Form style */
 form {
-  width: 20rem;
+  width: 80vw;
   height: 25vh;
   display: flex;
   justify-content: space-evenly;
@@ -502,7 +503,7 @@ div h2 > button:hover > a {
 footer div,
 footer > div i {
   font-family: var(--font-train-one);
-  font-size: 1em;
+  font-size: 0.6em;
   text-align: center;
   color: var(--color-azure);
   cursor: pointer;
