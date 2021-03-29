@@ -22,6 +22,7 @@
   --color-lightgreen: lightgreen;
   --color-purple-neon: #bc13fe;
   --color-green-neon: #39ff14;
+  --color-silver: silver;
 }
 /* Body style */
 body {
@@ -239,7 +240,7 @@ ul > li:last-child > a {
 /* Paragraph and link style */
 p > a {
   text-decoration: none;
-  color: silver;
+  color: var(--color-silver);
 }
 /* About bottom division */
 /* Grid template */
