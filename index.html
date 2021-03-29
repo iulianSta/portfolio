@@ -1,79 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta, Initial settings -->
     <meta charset="UTF-16" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page description -->
     <meta name="description" content="Personal Portfolio" />
+    <!-- Keywords for SEO -->
     <meta
       name="keywords"
       content="html, css, javascript, personal, info, cool, student, web, webpage, design, internet,responsive"
     />
+    <!-- Name of the page's author -->
     <meta name="author" content="Iulian Stan" />
     <meta name="copyright" content="Copyright owner" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
     <title>Portfolio</title>
+    <!-- Fontawesome link -->
     <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css" />
+    <!-- Normalize CSS link -->
     <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Mobile Media link -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 480px)"
+      href="./css/mobile.css"
+    />
+    <!-- Tablet Media link -->
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 481px) and (max-width: 767px)"
+      href="./css/tablet.css"
+    />
+    <!-- Tablet, Portrait mode Media link -->
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px) and (max-width: 1024px)"
+      href="./css/tablet-portrait.css"
+    />
+    <!-- Laptop, Desktop Media Link -->
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1025px) and (max-width: 1280px)"
+      href="./css/laptop.css"
+    />
+    <!-- Large screen Media link -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Home section -->
     <section class="home">
+      <!-- Header -->
       <div class="home-header">
+        <!-- Main menu -->
         <div class="top-menu">
+          <!-- X-menu for mobiles and tablets -->
           <div class="x-menu">
             <div></div>
             <div></div>
             <div></div>
           </div>
+          <!-- Menu -->
           <nav class="menu">
             <ul>
-              <li><a href="#about-me">About me</a></li>
-              <li><a href="#my-projects">Projects</a></li>
-              <li><a href="#contact-me">Contact</a></li>
+              <li class="bounce-in-top"><a href="#about-me">About me</a></li>
+              <li class="bounce-in-top"><a href="#my-projects">Projects</a></li>
+              <li class="bounce-in-top"><a href="#contact-me">Contact</a></li>
             </ul>
           </nav>
         </div>
+        <!-- Profile picture, logo -->
         <div class="profile-img">
-          <img src="./img/me-driving.jpg" alt="Me driving" />
+          <img
+            src="./img/me-driving.jpg"
+            alt="Me driving"
+            class="roll-in-left"
+          />
         </div>
       </div>
+      <!-- Main Home division -->
       <div class="home-main">
-        <div class="text">
-          <h1>Hi, I'm Iulian Stan</h1>
-          <p>
+        <div>
+          <!-- Home H1 -->
+          <h1 class="text text-focus-in">Hi, I'm Iulian Stan</h1>
+          <!-- Paragraph -->
+          <p class="text text-focus-in">
             Former military policeman <br />
             Current web developer student
           </p>
         </div>
+        <!-- My picture -->
         <div class="image">
-          <img src="./img/me.jpg" alt="Iulian Stan's image" />
+          <img
+            src="./img/me.jpg"
+            alt="Iulian Stan's image"
+            class="roll-in-left"
+          />
         </div>
       </div>
     </section>
+    <!-- About section -->
     <section id="about-me" class="about">
-      <h1>Who am I</h1>
-      <div class="about-main">
+      <!-- About, H1 -->
+      <h1 class="bounce-in-top">Who am I</h1>
+      <div class="about-main tracking-in-expand">
+        <!-- Paragraph, short description -->
         <p>
           After 10 years of military career in the Romanian Army <br />
           I decided to change my lifestyle, moving with my family to <br />
           Germany. Having the desire to learn to code I decided to give <br />
           myself a chance to change my career. I’m currently a student <br />
           and I'm learning web development at
+          <!-- DCI Institute link -->
           <a
             href="http://www.digitalcareerinstitute.org"
             target="_blank"
             rel="noopener noreferrer"
-            >DCI Digital Career Institute</a
+          >
+            <strong> DCI Digital Career Institute</strong></a
           >.
         </p>
+        <!-- Paragraph, hobbyes -->
         <p>
-          My hobbies are: <br />
+          <strong>Some of my hobbies are:</strong> <br />
           coding, music, photography, cars, fishing, <br />
           traveling, playing entertainment poker and video games.
         </p>
       </div>
+      <!-- About, images -->
       <div class="about-bottom">
-        <legend class="legend">
+        <legend class="legend text-typer">
           Some photos of street lights with fancy effects made by me
         </legend>
         <div class="about-img">
@@ -112,10 +170,13 @@
         </div>
       </div>
     </section>
+    <!-- Projects section -->
     <section id="my-projects" class="projects">
-      <h1>My projects</h1>
-
-      <h2>After I learned the basics of:</h2>
+      <!-- Projects, H1 -->
+      <h1 class="bounce-in-top">My projects</h1>
+      <!-- Projects, H2 -->
+      <h2>After I learned the basics of</h2>
+      <!-- Wha -->
       <div>
         <img
           src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=Linux&logoColor=yellow&color=success"
@@ -189,15 +250,14 @@
       </div>
     </section>
     <section id="contact-me" class="contact">
-      <h1>Contact me</h1>
+      <h1 class="bounce-in-top">Contact me</h1>
       <div>
         <h2>
-          If you have any questions or <br />
-          if you want to collaborate with me, <br />
-          you can send me a message
+          If you have any questions or if you want to <br />
+          collaborate with me, you can send me a message
         </h2>
         <form action="index.js" method="post">
-          <div>
+          <fieldset>
             <label for="name">Your Name:</label>
             <input
               type="text"
@@ -206,8 +266,8 @@
               placeholder="Type your name"
               required
             />
-          </div>
-          <div>
+          </fieldset>
+          <fieldset>
             <label for="email">Your E-mail:</label>
             <input
               type="email"
@@ -216,8 +276,8 @@
               placeholder="Type your e-mail"
               required
             />
-          </div>
-          <div>
+          </fieldset>
+          <fieldset>
             <label for="message">Your Message:</label>
             <textarea
               name="message"
@@ -227,8 +287,14 @@
               placeholder="Type your message"
               required
             ></textarea>
-          </div>
-          <button type="submit" name="submit" id="submit">Send Message</button>
+          </fieldset>
+          <button type="submit" name="submit" id="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Send Message
+          </button>
         </form>
       </div>
       <div>
@@ -250,11 +316,11 @@
           <i class="fab fa-facebook-square">&nbsp;&#124;&nbsp;Facebook</i>
         </div>
         <div>
-          <h4>
+          <h5>
             Made by <strong>Iulian Stan</strong>&nbsp;&#124;&nbsp; All
             copyrights reserved ®
             <span class="year"></span>
-          </h4>
+          </h5>
         </div>
       </footer>
     </section>
